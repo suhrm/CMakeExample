@@ -15,7 +15,7 @@ include_directories(
 )
 
 
-file(GLOB SOURCES "src/*.cpp")
+file(GLOB SOURCES "src/*.cpp") # Look for source files in this directory
 add_executable(main ${SOURCES})
 set_property(TARGET main PROPERTY CXX_STANDARD 17) # CPP version
 set_target_properties(main PROPERTIES OUTPUT_NAME "gatewayCPP") # Binary file name
